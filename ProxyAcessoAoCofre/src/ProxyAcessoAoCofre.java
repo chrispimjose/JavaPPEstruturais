@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class ProxyAcessoAoCofre {
  public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
@@ -79,8 +79,7 @@ public class App {
 
                     // O programa trabalha com a interface ICofre
                     // e não diretamente com o Cofre real
-                    ICofre cofre =
-                            new CofreProxy(senha);
+                    ICofre cofre = new CofreProxy(senha);
 
                     // Solicita a abertura do cofre
                     // O Proxy decide se o acesso será permitido
